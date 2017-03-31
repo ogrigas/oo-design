@@ -25,7 +25,7 @@ import com.google.common.collect.MapMaker;
 import com.google.common.collect.Range;
 import org.junit.Test;
 
-public class DesignPatterns {
+public class DesignPatternsTest {
 
     @Test
     public void abstractFactory() throws SQLException {
@@ -80,8 +80,7 @@ public class DesignPatterns {
 
     @Test
     public void facade() throws Exception {
-        Class c = DesignPatterns.class;
-        c.newInstance();        // delegates to Constructor
+        Class c = DesignPatternsTest.class;
         c.getResource("name");  // delegates to ClassLoader
         c.getTypeParameters();  // delegates to ClassRepository
     }

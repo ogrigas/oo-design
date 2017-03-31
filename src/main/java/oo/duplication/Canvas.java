@@ -8,21 +8,21 @@ public class Canvas {
     
     public void draw(Line line, int stroke) {
         switch (stroke) {
-            case SOLID_STROKE:  drawSolidLine(line); break;
+            case SOLID_STROKE:  drawSolidLine(line);  break;
             case DOTTED_STROKE: drawDottedLine(line); break;
             case DASHED_STROKE: drawDashedLine(line); break;
         }
     }
 
     private void drawSolidLine(Line line) {
-        // drawing omitted
+        System.out.println("SOLID LINE");
     }
 
     private void drawDottedLine(Line line) {
-        // drawing omitted
+        System.out.println("DOTTED LINE");
     }
 
     private void drawDashedLine(Line line) {
-        // drawing omitted
+        System.out.println("DASHED LINE");
     }
 }
